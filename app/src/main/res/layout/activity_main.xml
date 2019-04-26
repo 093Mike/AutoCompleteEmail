@@ -19,14 +19,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
 
-    <AutoCompleteTextView
+    <TextView
         android:id="@+id/email2"
-        android:layout_width="215dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="cambioDominio"
         android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/arroba"
-        app:layout_constraintTop_toBottomOf="@+id/domains" />
+        app:layout_constraintTop_toTopOf="@+id/email" />
 
     <Spinner
         android:id="@+id/domains"
@@ -72,10 +73,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:clickable="false"
+        android:onClick="guardarEmail_buton"
         android:text="Enviar"
-        android:onClick="GuardarEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email2" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
         android:id="@+id/textView"
